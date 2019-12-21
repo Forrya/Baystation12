@@ -1,6 +1,6 @@
 /obj/turbolift_map_holder/colony
 	name = "colony turbolift map placeholder"
-	depth = 3
+	depth = 2
 	lift_size_x = 4
 	lift_size_y = 4
 
