@@ -76,3 +76,9 @@
 /datum/gear/accessory/wallet_poly
 	display_name = "wallet, polychromic"
 	path = /obj/item/weapon/storage/wallet/poly
+
+/datum/gear/storage/color_drop_pouches
+    display_name = "drop pouches, color selection"
+    path = /obj/item/clothing/accessory/storage/drop_pouches/white
+    cost = 4
+    flags = GEAR_HAS_COLOR_SELECTION
