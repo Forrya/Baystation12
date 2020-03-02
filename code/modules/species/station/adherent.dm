@@ -172,3 +172,10 @@
 
 /datum/species/adherent/post_organ_rejuvenate(var/obj/item/organ/org, var/mob/living/carbon/human/H)
 	org.status |= (ORGAN_BRITTLE|ORGAN_CRYSTAL|ORGAN_ROBOTIC)
+
+//[inf]
+/datum/species/adherent/skills_from_age(age)
+	switch(age)
+		if(8000 to 9000). = 16
+		else            . = 24
+//[/inf]
