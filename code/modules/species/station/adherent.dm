@@ -150,12 +150,12 @@
 /datum/species/adherent/get_blood_name()
 	return "coolant"
 
-/datum/species/adherent/skills_from_age(age)
-	switch(age)
-		if(0 to 1000)    . = -4
-		if(1000 to 2000) . =  0
-		if(2000 to 8000) . =  4
-		else             . =  8
+//datum/species/adherent/skills_from_age(age)
+//	switch(age)
+//		if(0 to 1000)    . = -4
+//		if(1000 to 2000) . =  0
+//		if(2000 to 8000) . =  4
+//		else             . =  8
 
 /datum/species/adherent/get_additional_examine_text(var/mob/living/carbon/human/H)
 	if(can_overcome_gravity(H)) return "\nThey are floating on a cloud of shimmering distortion."
@@ -172,3 +172,10 @@
 
 /datum/species/adherent/post_organ_rejuvenate(var/obj/item/organ/org, var/mob/living/carbon/human/H)
 	org.status |= (ORGAN_BRITTLE|ORGAN_CRYSTAL|ORGAN_ROBOTIC)
+
+//[inf]
+/datum/species/adherent/skills_from_age(age)
+	switch(age)
+		if(8000 to 9000). = 16
+		else            . = 24
+//[/inf]
