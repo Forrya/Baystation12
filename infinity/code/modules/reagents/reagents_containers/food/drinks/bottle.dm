@@ -17,3 +17,10 @@
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/drink/tajaran/chai, 120)
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/three_eye
+	name = "Three eye"
+	desc = "Bluespace bottle of three eye."
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/three_eye, 100000000)
